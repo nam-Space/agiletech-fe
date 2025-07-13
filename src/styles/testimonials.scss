@@ -1,0 +1,199 @@
+@import "responsive";
+
+.testimonial {
+    padding-top: 120px;
+    @include laptopSmall {
+        padding-top: 70px;
+    }
+
+    @include tablet {
+        padding-top: 70px;
+    }
+
+    @include mobile {
+        padding-top: 48px;
+    }
+
+    .testimonial-wrapper {
+        max-width: 1120px;
+        margin: 0 auto;
+        background-color: #9c69e2;
+        border-radius: 50px;
+        padding: 110px 30px 60px;
+        @include laptopSmall {
+            padding: 70px 20px 35px;
+        }
+
+        @include tablet {
+            padding: 70px 20px 35px;
+        }
+
+        @include mobile {
+            padding: 48px 20px 24px;
+        }
+
+        .title {
+            color: white;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 130%;
+            padding: 0 63px;
+
+            @include mobile {
+                text-align: center;
+                padding: 0px 10px;
+            }
+        }
+
+        .swiper {
+            margin-top: 88px;
+
+            @include laptopSmall {
+                margin-top: 40px;
+            }
+
+            @include tablet {
+                margin-top: 40px;
+            }
+
+            @include mobile {
+                margin-top: 24px;
+            }
+
+            .swiper-slide {
+                padding: 0 64px;
+
+                @include mobile {
+                    padding: 0 30px;
+                }
+
+                .swiper-item {
+                    display: flex;
+                    background-color: white;
+                    border-radius: 20px;
+                    padding: 60px 101px 50px;
+                    gap: 43px;
+                    box-shadow: 0px 20px 0px 0px rgba(156, 105, 226, 0.3);
+
+                    @include laptopSmall {
+                        padding: 30px 50px 30px;
+                    }
+
+                    @include tablet {
+                        padding: 30px 50px 30px;
+                    }
+
+                    @include mobile {
+                        padding: 20px 20px 20px;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0;
+                    }
+
+                    img {
+                        width: 90px;
+                        height: 90px;
+                        object-fit: cover;
+                    }
+
+                    .swiper-text {
+                        padding-top: 20px;
+
+                        .swiper-title {
+                            font-weight: 900;
+                            font-size: 18px;
+                            line-height: 160%;
+                            letter-spacing: 0.5%;
+                            color: #212353;
+
+                            @include mobile {
+                                text-align: center;
+                            }
+                        }
+
+                        .swiper-link {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 160%;
+                            letter-spacing: 1%;
+                            color: #9c69e2;
+
+                            @include mobile {
+                                text-align: center;
+                            }
+                        }
+
+                        .swiper-desc {
+                            margin-top: 20px;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 180%;
+                            color: #4b5d68;
+                            max-width: 440px;
+                        }
+                    }
+                }
+            }
+
+            .swiper-pagination {
+                position: unset;
+                margin-top: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include laptopSmall {
+                    margin-top: 35px;
+                }
+
+                @include tablet {
+                    margin-top: 35px;
+                }
+
+                @include mobile {
+                    margin-top: 24px;
+                }
+
+                .swiper-pagination-bullet {
+                    width: 7px;
+                    height: 7px;
+                    background-color: white;
+                    opacity: 1;
+                }
+
+                .swiper-pagination-bullet.swiper-pagination-bullet-active {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #f063b8;
+                }
+            }
+
+            .arrow {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: calc(50% - 35px);
+                transform: translateY(-50%);
+                z-index: 1;
+
+                .arrow-left,
+                .arrow-right {
+                    cursor: pointer;
+
+                    @include mobile {
+                        width: 24px;
+                        height: 10px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

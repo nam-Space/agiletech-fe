@@ -1,0 +1,269 @@
+@import "responsive";
+
+.footer {
+    padding-top: 90px;
+    padding-bottom: 125px;
+
+    @include laptopSmall {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    @include tablet {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    @include mobile {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .border {
+        max-width: 1600px;
+        margin: 0 auto;
+        height: 2px;
+        background-color: #9c69e2;
+    }
+
+    .footer-wrapper {
+        padding-top: 96px;
+        max-width: 1120px;
+        margin: 0 auto;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        @include laptopSmall {
+            padding-top: 70px;
+        }
+
+        @include tablet {
+            padding-top: 70px;
+        }
+
+        @include mobile {
+            padding-top: 48px;
+            flex-direction: column;
+            align-items: center;
+            gap: 56px;
+        }
+
+        .footer-wrapper-1 {
+            .footer-wrapper-logo {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                img {
+                    width: 49px;
+                    height: 35px;
+                }
+
+                p {
+                    font-weight: 900;
+                    font-size: 20px;
+                    line-height: 160%;
+                    color: #212353;
+                }
+            }
+
+            .location-1 {
+                margin-top: 67px;
+
+                @include mobile {
+                    margin-top: 32px;
+                }
+            }
+
+            .location-1,
+            .location-2 {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 180%;
+                letter-spacing: 1%;
+                color: #212353;
+                @include mobile {
+                    text-align: center;
+                }
+            }
+
+            .info-1 {
+                margin-top: 10px;
+            }
+
+            .info-1,
+            .info-2 {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 180%;
+                letter-spacing: 1%;
+                color: #212353;
+                @include mobile {
+                    text-align: center;
+                }
+            }
+        }
+
+        .footer-wrapper-2 {
+            .about {
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 160%;
+                color: #212353;
+
+                @include mobile {
+                    text-align: center;
+                }
+            }
+
+            .profile {
+                margin-top: 30px;
+
+                @include mobile {
+                    margin-top: 32px;
+                }
+            }
+
+            .profile,
+            .features,
+            .careers,
+            .news {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 250%;
+                color: #212353;
+                @include mobile {
+                    text-align: center;
+                }
+            }
+        }
+
+        .footer-wrapper-3 {
+            .help {
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 160%;
+                color: #212353;
+
+                @include mobile {
+                    text-align: center;
+                }
+            }
+
+            .support {
+                margin-top: 30px;
+                @include mobile {
+                    margin-top: 32px;
+                }
+            }
+
+            .support,
+            .sign-up,
+            .guide,
+            .reports,
+            .qa {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 250%;
+                color: #212353;
+
+                @include mobile {
+                    text-align: center;
+                }
+            }
+        }
+
+        .footer-wrapper-4 {
+            .social-media {
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 160%;
+                color: #212353;
+
+                @include mobile {
+                    text-align: center;
+                }
+            }
+
+            .icon {
+                margin-top: 30px;
+                display: flex;
+                gap: 14px;
+
+                @include mobile {
+                    margin-top: 32px;
+                }
+
+                .icon-item {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: #2123531a;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: #212353;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-end {
+        max-width: 1120px;
+        margin: 93px auto 0;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            margin: 96px auto 0;
+        }
+
+        .footer-copyright {
+            @include mobile {
+                order: 2;
+            }
+            .footer-copyright-item {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 180%;
+                letter-spacing: 1%;
+                color: #212353;
+            }
+        }
+
+        .chat {
+            position: relative;
+
+            @include mobile {
+                order: 1;
+            }
+
+            .chat-overlay {
+                width: 60px;
+                height: 60px;
+                background-color: #9c69e2;
+                border-radius: 50%;
+                opacity: 0.2;
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

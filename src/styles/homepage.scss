@@ -1,0 +1,15 @@
+@import "responsive";
+
+.homepage {
+    @include laptopSmall {
+        padding: 0 56px;
+    }
+
+    @include tablet {
+        padding: 0 56px;
+    }
+
+    @include mobile {
+        padding: 0 16px;
+    }
+}

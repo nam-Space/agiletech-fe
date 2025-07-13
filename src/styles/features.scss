@@ -1,0 +1,242 @@
+@import "responsive";
+
+.feature {
+    padding-top: 200px;
+
+    @include laptopSmall {
+        padding-top: 70px;
+    }
+
+    @include tablet {
+        padding-top: 70px;
+    }
+
+    @include mobile {
+        padding-top: 48px;
+    }
+
+    .feature-wrapper {
+        max-width: 1120px;
+        margin: 0 auto;
+        .feature-text {
+            .feature-text-title {
+                font-size: 40px;
+                line-height: 130%;
+                font-weight: 700;
+                text-align: center;
+                color: #212353;
+
+                @include laptopSmall {
+                    line-height: 125%;
+                }
+
+                @include tablet {
+                    line-height: 125%;
+                }
+
+                @include mobile {
+                    line-height: 125%;
+                }
+            }
+            .feature-text-desc {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 160%;
+                color: #4b5d68;
+                text-align: center;
+                width: 51.34%;
+                margin: 50px auto 0;
+
+                @include laptopSmall {
+                    margin-top: 24px;
+                }
+
+                @include tablet {
+                    margin-top: 24px;
+                }
+
+                @include mobile {
+                    margin-top: 24px;
+                }
+            }
+        }
+
+        .feature-list {
+            margin-top: 98px;
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 50px;
+
+            @include laptopSmall {
+                margin-top: 64px;
+                gap: 20px;
+            }
+
+            @include tablet {
+                margin-top: 64px;
+                gap: 20px;
+            }
+
+            @include mobile {
+                margin-top: 64px;
+                gap: 20px;
+                grid-template-columns: auto;
+            }
+
+            .feature-item {
+                position: relative;
+                display: flex;
+                justify-content: end;
+
+                @include tablet {
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+                @include mobile {
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                }
+            }
+
+            .feature-item-thumb {
+                position: absolute;
+                top: 101px;
+                left: 0;
+
+                @include laptopSmall {
+                    width: 150px;
+                }
+
+                @include tablet {
+                    position: unset;
+                    width: 50%;
+                    height: 150px;
+                }
+
+                @include mobile {
+                    position: unset;
+                    width: 130px;
+                    height: 130px;
+                }
+            }
+
+            .feature-item-bg {
+                width: 435px;
+                height: 353px;
+
+                @include laptopSmall {
+                    width: 400px;
+                    height: 300px;
+                }
+
+                @include tablet {
+                    width: 100%;
+                    bottom: 0;
+                    top: 0;
+                    height: 100%;
+                    position: absolute;
+                }
+
+                @include mobile {
+                    width: 100%;
+                    bottom: 0;
+                    top: 0;
+                    height: 100%;
+                    position: absolute;
+                }
+            }
+
+            .feature-item-text {
+                position: absolute;
+                top: 48px;
+                left: 276px;
+                bottom: 33px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                @include laptopSmall {
+                    left: 150px;
+                    padding: 0 10px;
+                }
+
+                @include tablet {
+                    position: unset;
+                }
+
+                @include mobile {
+                    position: unset;
+                }
+
+                .feature-item-text-title {
+                    font-size: 24px;
+                    line-height: 130%;
+                    font-weight: 400;
+                    color: #212353;
+
+                    @include tablet {
+                        text-align: center;
+                    }
+
+                    @include mobile {
+                        text-align: center;
+                    }
+                }
+
+                .feature-item-text-desc {
+                    margin-top: 20px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 160%;
+                    color: #4b5d68;
+
+                    @include laptopSmall {
+                        margin-top: 16px;
+                    }
+
+                    @include tablet {
+                        padding: 0 40px;
+                    }
+
+                    @include mobile {
+                        padding: 0 40px;
+                    }
+                }
+
+                .feature-item-text-learn {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    @include tablet {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        padding: 0 40px;
+                    }
+
+                    @include mobile {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        padding: 0 40px;
+                        justify-content: center;
+                    }
+
+                    p {
+                        font-weight: 800;
+                        font-size: 16px;
+                        line-height: 160%;
+                        letter-spacing: 0.5%;
+                    }
+
+                    img {
+                        width: 20px;
+                        height: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

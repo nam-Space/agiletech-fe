@@ -1,0 +1,11 @@
+@import "responsive";
+
+.profile {
+    .profile-wrapper {
+        display: flex;
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+}

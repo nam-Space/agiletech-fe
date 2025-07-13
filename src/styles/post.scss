@@ -1,0 +1,104 @@
+@import "responsive";
+
+.post {
+    padding: 120px;
+    flex: auto;
+
+    @include laptopSmall {
+        padding: 90px;
+    }
+
+    @include tablet {
+        padding: 20px;
+    }
+
+    @include mobile {
+        padding: 20px;
+    }
+
+    .extension {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 20px;
+        flex-direction: column;
+
+        .btn-add {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 58px;
+            width: 252px;
+            background-color: #9c69e2;
+            color: white;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 160%;
+            letter-spacing: 0.5%;
+            cursor: pointer;
+        }
+
+        .input-wrapper {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 43px;
+
+            @include laptopSmall {
+                gap: 20px;
+            }
+
+            @include tablet {
+                gap: 20px;
+            }
+
+            @include mobile {
+                gap: 20px;
+                grid-template-columns: auto;
+                width: 100%;
+            }
+
+            .textbox {
+                width: 182px;
+                height: 32px;
+
+                @include mobile {
+                    width: 100%;
+                }
+            }
+
+            .select {
+                width: 182px;
+                height: 32px;
+                @include mobile {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .table {
+        margin-top: 35px;
+
+        .table-ele {
+            .action {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .pencil {
+                    width: 29px;
+                    height: 23px;
+                    cursor: pointer;
+                }
+
+                .trash {
+                    width: 29px;
+                    height: 23px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.header {
+    padding-top: 48px;
+
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1120px;
+        margin: 0 auto;
+
+        .user-granted {
+            gap: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .button {
+            cursor: pointer;
+            height: 60px;
+            width: 208px;
+            background-color: #9c69e2;
+            color: white;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+}

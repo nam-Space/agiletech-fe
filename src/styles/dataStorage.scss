@@ -1,0 +1,154 @@
+@import "responsive";
+
+.data-storage {
+    padding-top: 130px;
+
+    @include laptopSmall {
+        padding-top: 70px;
+    }
+
+    @include tablet {
+        padding-top: 70px;
+    }
+
+    @include mobile {
+        padding-top: 48px;
+    }
+
+    .data-storage-wrapper {
+        position: relative;
+        max-width: 1120px;
+        margin: 0 auto;
+        align-items: center;
+
+        .text-wrapper {
+            width: 57.23%;
+
+            @include laptopSmall {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            @include tablet {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            @include mobile {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .title {
+                font-size: 80px;
+                font-weight: 700;
+                line-height: 110.00000000000001%;
+                color: #212353;
+
+                @include laptopSmall {
+                    font-size: 40px;
+                    text-align: center;
+                }
+
+                @include tablet {
+                    font-size: 40px;
+                    text-align: center;
+                }
+
+                @include mobile {
+                    font-size: 40px;
+                    text-align: center;
+                }
+            }
+
+            .desc {
+                margin-top: 50px;
+                width: 52.67%;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 160%;
+                color: #4b5d68;
+
+                @include laptopSmall {
+                    margin-top: 24px;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                @include tablet {
+                    margin-top: 24px;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                @include mobile {
+                    margin-top: 24px;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+
+            .btn {
+                margin-top: 50px;
+                height: 60px;
+                width: 169px;
+                border-radius: 50px;
+                background-color: #9c69e2;
+                color: white;
+                font-size: 18px;
+                line-height: 160%;
+                letter-spacing: 0%;
+
+                @include laptopSmall {
+                    margin-top: 48px;
+                }
+
+                @include tablet {
+                    margin-top: 48px;
+                }
+
+                @include mobile {
+                    margin-top: 24px;
+                }
+            }
+        }
+
+        img {
+            position: absolute;
+            width: 760px;
+            height: 400px;
+            top: 95px;
+            right: 0;
+
+            @include laptopSmall {
+                position: unset;
+                width: 100%;
+                margin-top: 32px;
+                width: 100%;
+                height: auto;
+            }
+
+            @include tablet {
+                position: unset;
+                width: 100%;
+                margin-top: 32px;
+                width: 100%;
+                height: auto;
+            }
+
+            @include mobile {
+                position: unset;
+                width: 100%;
+                margin-top: 32px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
