@@ -8,11 +8,11 @@ import { toast } from "react-toastify";
 
 const Sidebar = () => {
     const navigate = useNavigate();
-    const { user, setUser } = useContext(UserContext);
+    const { setUser } = useContext(UserContext);
 
     const handleLogout = async () => {
         try {
-            const result = await callLogout();
+            await callLogout();
             localStorage.removeItem("access_token");
             setUser({});
             toast.success("Đăng xuất thành công!", {
@@ -30,7 +30,7 @@ const Sidebar = () => {
         <div className="sidebar">
             <div className="logo">
                 <Link to={"/"}>
-                    <img src={logoImg} className="logo-img" />
+                    <img alt="logoImg" src={logoImg} className="logo-img" />
                 </Link>
             </div>
             <div className="text">

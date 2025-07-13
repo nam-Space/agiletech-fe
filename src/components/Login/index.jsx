@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import logoImg from "../../images/logo.png";
 import "styles/login.scss";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { callLogin } from "config/api";
 import { toast } from "react-toastify";
 
 const Login = () => {
-    const navigate = useNavigate();
-
     const [form, setForm] = useState({
         username: "",
         password: "",
@@ -33,7 +31,7 @@ const Login = () => {
         <div className="login">
             <div className="header-login">
                 <Link to={"/"}>
-                    <img src={logoImg} />
+                    <img alt="logoImg" src={logoImg} />
                 </Link>
             </div>
             <form className="login-wrapper" onSubmit={handleSubmit}>

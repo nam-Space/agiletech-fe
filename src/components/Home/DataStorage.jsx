@@ -15,7 +15,7 @@ const DataStorage = () => {
                     </p>
                     <button className="btn">Learn more</button>
                 </div>
-                <img src={dataStorageImg} />
+                <img alt="dataStorageImg" src={dataStorageImg} />
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Pagination, Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "styles/testimonials.scss";
 import item1Img from "../../images/home/testimonials/item-1.png";
 import item2Img from "../../images/home/testimonials/item-2.png";
@@ -50,7 +50,7 @@ const Testimonials = () => {
                     {items.map((item, index) => (
                         <SwiperSlide key={index} className="swiper-slide">
                             <div className="swiper-item">
-                                <img src={item.image} />
+                                <img alt="itemImg" src={item.image} />
                                 <div className="swiper-text">
                                     <p className="swiper-title">{item.name}</p>
                                     <p className="swiper-link">{item.url}</p>
@@ -64,13 +64,13 @@ const Testimonials = () => {
                             className="arrow-left"
                             onClick={() => swiperRef.current?.slidePrev()}
                         >
-                            <img src={arrowLeftImg} />
+                            <img alt="arrowLeftImg" src={arrowLeftImg} />
                         </div>
                         <div
                             className="arrow-right"
                             onClick={() => swiperRef.current?.slideNext()}
                         >
-                            <img src={arrowRightImg} />
+                            <img alt="arrowRightImg" src={arrowRightImg} />
                         </div>
                     </div>
                 </Swiper>

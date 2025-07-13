@@ -60,9 +60,14 @@ const Features = () => {
                         <div key={index} className="feature-item">
                             <img
                                 src={item.thumbImg}
+                                alt="thumbImg"
                                 className="feature-item-thumb"
                             />
-                            <img src={item.bgImg} className="feature-item-bg" />
+                            <img
+                                alt="bgImg"
+                                src={item.bgImg}
+                                className="feature-item-bg"
+                            />
                             <div className="feature-item-text">
                                 <div>
                                     <p className="feature-item-text-title">
@@ -74,7 +79,10 @@ const Features = () => {
                                 </div>
                                 <div className="feature-item-text-learn">
                                     <p>{item.learn}</p>
-                                    <img src={arrowRightImg} />
+                                    <img
+                                        alt="arrowRightImg"
+                                        src={arrowRightImg}
+                                    />
                                 </div>
                             </div>
                         </div>

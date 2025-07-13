@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="footer-wrapper">
                 <div className="footer-wrapper-1">
                     <div className="footer-wrapper-logo">
-                        <img src={logoImg} />
+                        <img alt="logoImg" src={logoImg} />
                         <p>DataWarehouse</p>
                     </div>
                     <p className="location-1">Warehouse Society, 234</p>
@@ -89,7 +89,7 @@ const Footer = () => {
                 </div>
                 <div className="chat">
                     <div className="chat-overlay"></div>
-                    <img src={chatImg} />
+                    <img alt="chatImg" src={chatImg} />
                 </div>
             </div>
         </div>

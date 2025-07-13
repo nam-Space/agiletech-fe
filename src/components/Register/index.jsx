@@ -34,7 +34,7 @@ const Register = () => {
     return (
         <div className="login">
             <div className="header-login">
-                <img src={logoImg} />
+                <img alt="logoImg" src={logoImg} />
             </div>
             <form className="login-wrapper" onSubmit={handleSubmit}>
                 <p className="title">Sign Up</p>
