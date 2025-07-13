@@ -7,7 +7,8 @@ export const refreshToken = async (callback) => {
 
         if (result.isError) {
             if (window.location.pathname !== '/' && window.location.pathname !== '/login' && window.location.pathname !== "/register") {
-                window.location.href = '/login'
+                console.log(window.location)
+                // window.location.href = '/login'
                 toast.error(result.message, {
                     position: "bottom-right",
                 });
