@@ -9,7 +9,6 @@ import { toast } from "react-toastify";
 const Header = () => {
     const navigate = useNavigate();
     const { user, setUser } = useContext(UserContext);
-    console.log("user", user);
 
     const handleLogout = async () => {
         try {
