@@ -1,3 +1,5 @@
+@import "responsive";
+
 .header {
     padding-top: 48px;
 
@@ -12,6 +14,10 @@
             gap: 30px;
             display: flex;
             align-items: center;
+
+            @include mobile {
+                gap: 10px;
+            }
         }
 
         .button {
@@ -23,6 +29,11 @@
             border-radius: 50px;
             font-size: 16px;
             font-weight: 700;
+
+            @include mobile {
+                width: 80px;
+                height: 40px;
+            }
         }
     }
 }
